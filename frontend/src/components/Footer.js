@@ -1,9 +1,14 @@
-import React from 'react'
+import * as React from 'react';
+import Box from '@mui/material/Box';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <Box
+      alignItems="center"
+      p={2}
+      sx={{ background: '#eee', textAlign: 'center'}}
+    >
+      Copyrights 2024 - All Rights Reserved - ZuAI
+    </Box>
+  );
 }
-
-export default Footer
