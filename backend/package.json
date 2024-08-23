@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "ZuAI Assignment",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RabbanMehamood/ZuAI-Blog.git"
+  },
+  "keywords": [
+    "ZuAI"
+  ],
+  "author": "Mehamood Rabban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RabbanMehamood/ZuAI-Blog/issues"
+  },
+  "homepage": "https://github.com/RabbanMehamood/ZuAI-Blog#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
