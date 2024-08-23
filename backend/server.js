@@ -1,7 +1,15 @@
-const express = require('express')
+const express = require('express');
+const app = express();
 
-const app = express()
+// Define a GET route at the root path '/'
+app.get('/', (req, res) => {
+    // Send a response to the client
+    res.send('Server is ON');
+  });
+  
 
-app.listen(3000, () =>
-    console.log('Server Running on PORT : 3000'),
-  )
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
