@@ -1,15 +1,12 @@
-import './App.css';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import PostList from './components/PostList';
+import React from 'react';
+import RoutesComponent from './Routes';
+import { Container } from '@mui/material';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <PostList/>
-    <Footer/>
-    </>
+    <Container>
+      <RoutesComponent />
+    </Container>
   );
 }
 

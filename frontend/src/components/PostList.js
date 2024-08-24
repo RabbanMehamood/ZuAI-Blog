@@ -1,15 +1,43 @@
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import React, { useEffect, useState } from 'react';
+import { fetchPosts } from '../services/postService';
+import { Card, CardContent, Typography, Button, Grid } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
-export default function PostList () {
+const PostList = () => {
+  const [posts, setPosts] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const getPosts = async () => {
+      try {
+        const { data } = await fetchPosts();
+        setPosts(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getPosts();
+  }, []);
+
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="false" disableGutters='true'>
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center', paddingTop: '30px' }} >Blog Posts - List</Box>
-      </Container>
-    </React.Fragment>
+    <Grid container spacing={3}>
+      {posts.map((post) => (
+        <Grid item xs={12} sm={6} md={4} key={post.id}>
+          <Card>
+            <CardContent>
+              <Typography variant="h5">{post.title}</Typography>
+              <Typography variant="body2" color="textSecondary">
+                {post.excerpt}
+              </Typography>
+              <Button variant="contained" color="primary" onClick={() => navigate(`/posts/${post.id}`)}>
+                Read More
+              </Button>
+            </CardContent>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
   );
-}
+};
+
+export default PostList;
