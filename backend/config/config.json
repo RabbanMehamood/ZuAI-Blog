@@ -1,9 +1,0 @@
-{
-    "development": {
-    "username": "sql12727493",
-    "password": "1LUl2nVu7j",
-    "database": "sql12727493",
-    "host": "sql12.freesqldatabase.com",
-    "dialect": "postgres"
-    }
-   }
