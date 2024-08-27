@@ -20,7 +20,7 @@ const PostList = () => {
   }, []);
 
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={4}>
       {posts.map((post) => (
         <Grid item xs={12} sm={6} md={4} key={post.id}>
           <Card>

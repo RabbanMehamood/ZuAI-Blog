@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 
 function App() {
   return (
-    <Container>
+    <Container disableGutters={true} maxWidth={false} maxHeight={false}>
       <RoutesComponent />
     </Container>
   );
