@@ -43,7 +43,7 @@ The ZuAI Blog is a full-stack web application that allows users to perform CRUD 
 
 1. **Clone the Repository:**
 
-   git clone https://github.com/yourusername/zuai-blog-backend.git
+   git clone [https://github.com/yourusername/zuai-blog-backend.git](https://github.com/RabbanMehamood/ZuAI-Blog)
    cd zuai-blog-backend
 
 2. **Install Dependencies:**
@@ -69,7 +69,7 @@ The ZuAI Blog is a full-stack web application that allows users to perform CRUD 
 
 1. **Clone the Repository:**
 
-   git clone https://github.com/rabbanmehamood/zuai-blog-frontend.git
+   git clone [https://github.com/rabbanmehamood/zuai-blog-frontend.git](https://github.com/RabbanMehamood/ZuAI-Blog)
    cd zuai-blog-frontend
 
 2. **Install Dependencies:**
