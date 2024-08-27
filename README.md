@@ -44,13 +44,14 @@ The ZuAI Blog is a full-stack web application that allows users to perform CRUD 
 1. **Clone the Repository:**
 
    git clone [https://github.com/yourusername/zuai-blog-backend.git](https://github.com/RabbanMehamood/ZuAI-Blog)
+   
    cd zuai-blog-backend
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 
    npm install
 
-3. **Create .env File:**
+4. **Create .env File:**
    Create a `.env` file in the root directory with the following content:
 
    DB_HOST=localhost
@@ -59,7 +60,7 @@ The ZuAI Blog is a full-stack web application that allows users to perform CRUD 
    DB_DB_NAME=zu_ai_blog
    DB_PORT=3306
 
-4. **Run the Server:**
+5. **Run the Server:**
 
    npm start
 
@@ -70,18 +71,19 @@ The ZuAI Blog is a full-stack web application that allows users to perform CRUD 
 1. **Clone the Repository:**
 
    git clone [https://github.com/rabbanmehamood/zuai-blog-frontend.git](https://github.com/RabbanMehamood/ZuAI-Blog)
+   
    cd zuai-blog-frontend
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 
    npm install
 
-3. **Create .env File:**
+4. **Create .env File:**
    Create a `.env` file in the root directory with the following content:
 
    REACT_APP_API_URL=https://zuai-blog-backend.onrender.com/api/posts
 
-4. **Run the Frontend:**
+5. **Run the Frontend:**
 
    npm start
 
