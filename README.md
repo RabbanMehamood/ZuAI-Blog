@@ -5,8 +5,8 @@
 The ZuAI Blog is a full-stack web application that allows users to perform CRUD (Create, Read, Update, Delete) operations on blog posts. The application is divided into a backend and a frontend, with the backend providing RESTful API services and the frontend providing the user interface for interacting with the blog.
 
 ## URLs
-
-* **Backend:** https://zuai-blog-backend.onrender.com/
+<p>The loading of components make take some time because of the render server wait for 30 to 50 secs.</p>
+* **Backend:** https://zuai-blog-backend.onrender.com/       
 * **Frontend:** https://zuai-blog-frontend.onrender.com/
 
 ## Project Structure
